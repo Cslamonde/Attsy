@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        QR Code
+    </title>
+    <Meta name="viewpoint" content="width=device-width">
+    <link rel="stylesheet" href="main.css">
+    <style></style>
+    <script src="qrcode.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>QR Code</h1>
+        <P>Scan the QR Code to fill in your details
+        </P>
+    </header>
+    <main>
+
+
+        <div id="output"></div>
+        <img src="Media/qr-code.svg" width="720" height="600">
+        <script>
+            let qrcode = new QRCode("output", {
+                text: "https://stackblitz.com/edit/attsy?file=form.html",
+                width: 5,
+                height: 5,
+                colorDark: "990000",
+                colorLight: "ffffff",
+                correctLevel: QRCode.CorrectLevel
+            });
+
+            document.body.addEventListener('click', () => {
+                qrcode.clear();
+                qrcode.makeCode("https://www.qrcode-monkey.com/")
+            })
+        </script>
+    </main>
+</body>
+
+</html>

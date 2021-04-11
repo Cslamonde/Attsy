@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Submission</title>
+</head>
+
+<body>
+    <form action="form.php" method="POST">
+        <fieldset>
+            <legend>
+                Submit your details
+            </legend>
+            <ol>
+                <li>
+                    <label for="admission_no">Adm. No:</label>
+                    <input type="number" name="admission_no" id="admission_no">
+                </li>
+                <li>
+                    <label for="surname">SurName:</label>
+                    <input type="text" name="surname" id="surname">
+                </li>
+
+                <li>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname">
+                </li>
+
+                <li>
+                    <label for="middlename">Middle Name:</label>
+                    <input type="text" name="middlename" id="middlename">
+
+                </li>
+                <p>Group:<input type="text" list="group" name="group">
+
+                    <datalist id="group">
+                <option value="A">
+                    <option value="B">
+                        <option value="C">
+                            <option value="D"> 
+                                <option value="D"> 
+                                    <option value="F">   
+                                        <option value="G">            
+
+                                      
+            </datalist>
+
+
+                </p>
+
+            </ol>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
